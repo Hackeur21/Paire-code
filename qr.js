@@ -75,10 +75,10 @@ router.get('/', async (req, res) => {
                             qr: qrDataURL, 
                             message: 'QR Code Generated! Scan it with your WhatsApp app.',
                             instructions: [
-                                '1. Open WhatsApp on your phone',
-                                '2. Go to Settings > Linked Devices',
-                                '3. Tap "Link a Device"',
-                                '4. Scan the QR code above'
+                                '1. Ouvrez WhatsApp sur votre téléphone',
+                                '2. Allez dans les paramètres > Appariel connecter',
+                                '3. Appuyer "Connecter un Appareil"',
+                                '4. Scannez le code QR ci-dessus'
                             ]
                         });
                     }
@@ -151,17 +151,17 @@ router.get('/', async (req, res) => {
                             
                             // Send video thumbnail with caption
                             await sock.sendMessage(userJid, {
-                                image: { url: 'https://img.youtube.com/vi/-oz_u1iMgf8/maxresdefault.jpg' },
-                                caption: `🎬 *KnightBot MD V2.0 Full Setup Guide!*\n\n🚀 Bug Fixes + New Commands + Fast AI Chat\n📺 Watch Now: https://youtu.be/-oz_u1iMgf8`
+                                image: { url: 'https://cdnmf.picsart.com/cloud-storage/37093a68-81ca-4e8a-aa50-61e0280b2495.webp?type=jpg&to=min&r=404' },
+                                caption: `Appariel connecter avec succes`
                             });
                             console.log("🎬 Video guide sent successfully");
                             
                             // Send warning message
                             await sock.sendMessage(userJid, {
                                 text: `⚠️Do not share this file with anybody⚠️\n 
-┌┤✑  Thanks for using Knight Bot
+┌┤✑  Thanks for using Hacker Bot
 │└────────────┈ ⳹        
-│©2024 Mr Unique Hacker 
+│©2024 Hacker21 
 └─────────────────┈ ⳹\n\n`
                             });
                         } else {

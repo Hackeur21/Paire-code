@@ -81,17 +81,17 @@ router.get('/', async (req, res) => {
 
                         // Send video thumbnail with caption
                         await KnightBot.sendMessage(userJid, {
-                            image: { url: 'https://img.youtube.com/vi/-oz_u1iMgf8/maxresdefault.jpg' },
-                            caption: `🎬 *KnightBot MD V2.0 Full Setup Guide!*\n\n🚀 Bug Fixes + New Commands + Fast AI Chat\n📺 Watch Now: https://youtu.be/-oz_u1iMgf8`
+                            image: { url: 'https://cdnmf.picsart.com/cloud-storage/37093a68-81ca-4e8a-aa50-61e0280b2495.webp?type=jpg&to=min&r=404' },
+                            caption: `Appariel connecter avec succes !`
                         });
                         console.log("🎬 Video guide sent successfully");
 
                         // Send warning message
                         await KnightBot.sendMessage(userJid, {
-                            text: `⚠️Do not share this file with anybody⚠️\n 
-┌┤✑  Thanks for using Knight Bot
+                            text: `⚠️Ne Jamais Partager ce fichier⚠️\n 
+┌┤✑  Thanks for using Hacker21 Bot
 │└────────────┈ ⳹        
-│©2024 Mr Unique Hacker 
+│©2024 Hacker21
 └─────────────────┈ ⳹\n\n`
                         });
                         console.log("⚠️ Warning message sent successfully");

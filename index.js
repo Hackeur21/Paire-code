@@ -27,14 +27,14 @@ app.use(express.static(__dirname));
 
 // Routes
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'pair.html'));
+    res.sendFile(path.join(__dirname, 'pair-styled.html'));
 });
 
 app.use('/pair', pairRouter);
 app.use('/qr', qrRouter);
 
 app.listen(PORT, () => {
-    console.log(`YoutTube: @mr_unique_hacker\n\nGitHub: @mruniquehacker\n\nServer running on http://localhost:${PORT}`);
+    console.log(`YoutTube: @hacker21\n\nGitHub: @hackeur21\n\nServer running on http://localhost:${PORT}`);
 });
 
 export default app;
